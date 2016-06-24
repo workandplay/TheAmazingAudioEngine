@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "TheAmazingAudioEngine"
-  s.version      = "1.5.7"
+  s.version      = "1.5.8"
   s.summary      = "Core Audio, Cordially: A sophisticated framework for iOS audio applications, built so you don't have to."
   s.homepage     = "http://theamazingaudioengine.com"
   s.license      = 'zlib'
   s.author       = { "Michael Tyson" => "michael@atastypixel.com" }
-  s.source       = { :git => "https://github.com/workandplay/TheAmazingAudioEngine", :tag => "1.5.7" }
+  s.source       = { :git => "https://github.com/workandplay/TheAmazingAudioEngine", :tag => "1.5.8" }
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
   s.tvos.deployment_target = '9.0'
@@ -35,5 +35,6 @@ Pod::Spec.new do |s|
 					'-DTPCircularBufferPeekContiguous=AECBPeekContiguous',
 					'-D_TPCircularBufferPeek=_AECBPeek'
   s.frameworks = 'AudioToolbox', 'Accelerate'
+  s.dependency 'TPCircularBuffer', '~> 1.0'
   s.requires_arc = true
 end
