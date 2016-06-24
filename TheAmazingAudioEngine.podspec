@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.tvos.deployment_target = '9.0'
   s.source_files = 'TheAmazingAudioEngine/**/*.{h,m,c}', 'Modules/**/*.{h,m,c}'
+  s.exclude_files = 'Modules/TPCircularBuffer'
   s.osx.exclude_files = 'Modules/Filters/AEReverbFilter.*'
   s.compiler_flags = '-DTPCircularBuffer=AECB',
 					'-D_TPCircularBufferInit=_AECBInit',
